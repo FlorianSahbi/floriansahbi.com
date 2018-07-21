@@ -1,0 +1,1301 @@
+* {
+    margin: 0px; 
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body,
+html,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+section {
+    margin: 0;
+    padding: 0;
+    font-family: ABeeZee;
+    font-size: 16px;
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow: hidden;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+p {
+    text-align: justify;
+}
+
+h1 {
+    font-family: Petit Formal Script,cursive;
+    font-size: 2em;
+}
+
+.techno {
+    color: rgb(255,255,255,0.5);
+}
+
+.activeMenu {
+    font-size: 1.4em!important;
+    font-weight: 900!important;
+    color: white!important;
+
+}
+
+.dotActive {
+    animation-name: hvr-bob;
+    animation-name: hvr-bob-sink,hvr-bob;
+    animation-duration: .3s,1.5s;
+    animation-iteration-count: infinite;
+    animation-iteration-count: 1,infinite;
+    animation-direction: normal,alternate;
+    animation-timing-function: ease-out,ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0s,.3s;
+}
+
+.fa {
+    margin-right: 5px;
+    color: #ff0000;
+}
+
+.bouton {
+    display: inline-block;
+    position: relative;
+    margin-top: 5px;
+    padding: 10px 25px;
+    border: 3px double #ffffff;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.bouton:hover {
+    border: 3px double #ff0000;
+    background-color: #272830;
+}
+
+.hangalways {
+    animation-name: hvr-bob;
+    animation-name: hvr-bob-sink,hvr-bob;
+    animation-duration: .3s,1.5s;
+    animation-iteration-count: infinite;
+    animation-iteration-count: 1,infinite;
+    animation-direction: normal,alternate;
+    animation-timing-function: ease-out,ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0s,.3s;
+}
+
+/*///////////////////////////////////////////////////// SCROLL TOP //////////////////////*/
+
+.scrollTop {
+    z-index: 9999;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    height: 50px;
+    display: none;
+}
+
+.scrollTop .fa {
+    color: rgba(0,0,0,0.3);
+}
+
+/*///////////////////////////////////////////////////// SCROLL TOP FIN //////////////////////*/
+
+/*///////////////////////////////////////////////////// MENU MOBILE //////////////////////*/
+
+#menuMobile {
+    position: fixed; 
+    bottom: 10px; 
+    left: 10px;
+    display: none;
+    z-index: 999;
+    cursor: pointer;
+    display: none;
+}
+
+#menuMobileSwitch {
+    height: 40px; 
+    width: 40px; 
+    border-radius: 10px; 
+    background-image: url('menuMobileOpen.png'); 
+    background-size: 60%; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-color: #272830; 
+    border: 10px double #770000;
+    display: none;
+}
+            
+.elementMenuMobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 180px;
+    height: 40px;
+    background-color: #272830;
+    border-radius: 10px;
+    margin: 10px 0;
+    left: -220px;
+    border: 10px double #770000;
+    display: none;
+}
+
+.elementMenuMobile h3 {
+    color: white;
+    display: none;
+}
+
+/*///////////////////////////////////////////////////// MENU MOBILE FIN //////////////////////*/
+
+
+/*///////////////////////////////////////////////////// MENU PC //////////////////////*/
+
+nav#menu {
+    z-index: 9999;
+    height: 50px;
+    box-shadow: 0 0 0 0 #000;
+    transition: all 0.5s ease-out;
+    background-color: #272830;
+    position: fixed;
+    width: 100%;
+}
+
+nav#menu:hover {
+    box-shadow: 0 0 20px 0 #000;
+}
+
+nav#menu ul {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+
+nav#menu ul li {
+    font-size: 1.2em;
+    color: rgba(255,255,255,0.5);
+    transition: all 0.2s ease-out;
+}
+
+nav#menu ul li:hover {
+    font-size: 1.4em;
+    font-weight: 900;
+    color: white;
+}
+
+nav#menu .menuCv {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+}
+
+nav#menu .menuCv:after {
+    content: '';
+    border: 2px red solid
+}
+
+/*///////////////////////////////////////////////////// MENU PC FIN //////////////////////*/
+
+/*///////////////////////////////////////////////////// HEADER //////////////////////*/
+
+header#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-image: url(bgHeader.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header#home .fa {
+    color: white;
+}
+
+header#home .fa-arrow-down {
+    display: flex;
+    justify-content: center;
+
+}
+
+header#home .homeContent {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+}
+
+header#home .idSite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+header#home .homeContent .continuerVisite {
+    display: flex;
+    z-index: 10;
+    position: absolute;
+    bottom: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header#home .homeContent .continuerVisite p {
+    opacity: 0.5;
+}
+
+header#home .blankElem {
+    width: 100%;
+    height: 100%;
+}
+
+header#home h1 {
+    overflow: hidden;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Cabin Sketch,cursive;
+    font-size: 6em;
+    font-weight: normal;
+    line-height: 0.8;
+}
+
+header#home h2 {
+    overflow: hidden;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: Cabin Sketch,cursive;
+    font-size: 2.8em;
+    font-weight: normal;
+    line-height: 0.8;
+}
+
+/*///////////////////////////////////////////////////// HEADER FIN //////////////////////*/
+
+/*///////////////////////////////////////////////////// SECTION FORMATIONS //////////////////////*/
+
+section#formations {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+}
+
+section#formations .bgFormations {
+    display: flex;
+    z-index: 1;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+section#formations .bgFormations .colonneBgFormation {
+    height: 100%;
+}
+
+section#formations .bgFormation {
+    width: 100%;
+    height: 100%;
+}
+
+section#formations .bgHetic {
+    width: 33%;
+    background-attachment: fixed;
+    background-image: url(bgHetic.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+section#formations .bgNdlp {
+    width: 33%;
+    background-attachment: fixed;
+    background-image: url(bgNdlp.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+section#formations .bgCachin {
+    width: 33%;
+    background-attachment: fixed;
+    background-image: url(bgCachin.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+section#formations .formationContent {
+    display: flex;
+    z-index: 2;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    border: 10px #770000 double;
+    border-radius: 10px;
+    color: black;
+    background-image: url(straws.png), linear-gradient(#ffffff, #d1d1d1);
+}
+
+section.formations .previewFormation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+section.formations .descriptionFormation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+section#formations .descriptionFormation ul {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    color: black;
+}
+
+section#formations .descriptionFormation li {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.5em;
+    font-weight: 100;
+    color: black;
+}
+
+section#formations .descriptionFormation span {
+    margin-right: 2px;
+}
+
+section#formations .previewFormation img {
+    height: 100%;
+}
+
+section#formations nav.navFormations {
+    display: flex;
+    z-index: 5;
+    position: absolute;
+    bottom: 50px;
+    align-items: center;
+    justify-content: space-around;
+    width: 350px;
+    height: 120px;
+    border: 10px #770000 double;
+    border-radius: 10px;
+    background-image: url(straws.png), linear-gradient(#ffffff, #d1d1d1);
+}
+
+section#formations nav.navFormations ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+section#formations nav.navFormations li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+}
+
+section#formations nav.navFormations img {
+    height: 100%;
+}
+
+section#formations .bouton {
+    display: inline-block;
+    z-index: 999;
+    position: relative;
+    margin-top: 10px;
+    padding: 10px 25px;
+    border: 3px double #000;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1em;
+    color: #000;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+section#formations .bouton:hover {
+    border: 3px double #ff0000;
+    color: white;
+    background-color: #272830;
+}
+
+/*///////////////////////////////////////////////////// SECTION FORMATIONS FIN //////////////////////*/
+
+/*///////////////////////////////////////////////////// SECTION PROJETS //////////////////////*/
+
+section#projets {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    background-image: url(straws.png), linear-gradient(#ffffff, #d1d1d1);
+}
+
+section#projets .projetContent {
+    display: flex;
+    z-index: 2;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    border: 10px #770000 double;
+    border-radius: 10px;
+    background-color: #272830;
+}
+
+section#projets .switchNavProjets {
+
+    height: 50px;
+    width: 25px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+    cursor: pointer;
+    z-index: 999;
+}
+
+section#projets .switchNavProjets span {
+    color: #fff;
+    font-size: 2em;
+}
+
+section#projets .descriptionProjet {
+    display: flex;
+    position: relative;
+    /*right: -25%;*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+section#projets .descriptionProjet h2 {
+    font-size: 2em;
+}
+
+section#projets .previewProjet {
+    display: flex;
+    position: relative;
+    /*left: -25%;*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+section#projets .previewProjet span {
+    font-size: 0.9em;
+}
+
+section#projets .previewProjet img {
+    width: 100%;
+    margin: 10px 0 20px 0;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+}
+
+section#projets nav.navProjets {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+section#projets nav.navProjets ul {
+    display: flex;
+    z-index: 3;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+section#projets nav.navProjets li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32%;
+    cursor: pointer;
+    height: 40%;
+    overflow: hidden;
+}
+
+section#projets nav.navProjets img {
+    width: 90%;
+    border-radius: 5%;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+    border-top: 2px rgba(255,255,255,0.2) solid;
+    border-left: 2px rgba(255,255,255,0.2) solid;
+}
+
+section#projets .bgProjet {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+section#projets nav.navProjets .dotLareinette:after {
+    content: "La Reinette";
+    position: absolute;
+    bottom: 0;
+}
+
+section#projets nav.navProjets .dotLagalopee:after {
+    content: "La Galopée";
+    position: absolute;
+    bottom: 0;
+}
+
+section#projets nav.navProjets .dotCirisi:after {
+    content: "Naval Group";
+    position: absolute;
+    bottom: 0;
+}
+
+section#projets nav.navProjets .dotFloriansahbi:after {
+    content: "floriansahbi.com";
+    position: absolute;
+    bottom: 0;
+}
+
+section#projets nav.navProjets .dotGestionstocks:after {
+    content: "Gestion stocks";
+    position: absolute;
+    bottom: 0;
+}
+
+section#projets nav.navProjets .dotSiogame:after {
+    content: "Siogame";
+    position: absolute;
+    bottom: 0;
+}
+
+section#projets .bgLareinette {
+    background-attachment: fixed;
+    background-image: url(previewLareinetteBlur.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+section#projets .bgLagalopee {
+    background-attachment: fixed;
+    background-image: url(previewLagalopeeBlur.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+section#projets .bgCirisi {
+    background-attachment: fixed;
+    background-image: url(previewCirisiBlur.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+section#projets .bgFloriansahbi {
+    background-attachment: fixed;
+    background-image: url(previewFloriansahbiBlur.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+section#projets .bgGestionstocks {
+    background-attachment: fixed;
+    background-image: url(previewGestionstocksBlur.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+section#projets .bgSiogame {
+    background-attachment: fixed;
+    background-image: url(previewSiogameBlur.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/*///////////////////////////////////////////////////// SECTION PROJETS FIN //////////////////////*/
+
+/*///////////////////////////////////////////////////// SECTION COMPETENCES //////////////////////*/
+
+section#competences {
+    height: 100vh;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #272830;
+    border-top: 8px double #770000;
+    border-bottom: 8px double #770000;
+}
+
+section#competences .competencesContent {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+section#competences .ligneLangages {
+    width: 100%;
+    display: flex;
+    flex: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+section#competences h2 {
+    font-size: 2em;
+    margin: 20px 0;
+    font-family: petit formal script;
+}
+
+section#competences .ligneLangues {
+    width: 100%;
+    display: flex;
+    flex: 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+section#competences .ligneLangues .langue {
+    height: 100%;
+    display: flex;
+    flex: 33%;
+    justify-content: center;
+    align-items: center;
+    border: 5px rgba(0,0,0,0) solid;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+section#competences .ligneLangages .colonneLangages {
+    height: 100%;
+    display: flex;
+    flex: 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+section#competences .ligneLangages .colonneLangagesDot {
+    height: 100%;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+section#competences .ligneLangages .colonneLangagesDot .dotCompetence {
+    height: 10%;
+    width: 40%;
+    border: 5px #770000 double;
+    border-radius: 29.3px;
+    margin: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: capitalize;
+    box-shadow: 0px 0px 18px rgba(0,0,0,0.6);
+}
+
+section#competences .ligneLangages .colonneLangagesDot .dotCompetence h3 {
+    position: absolute;
+    
+}
+
+section#competences .ligneLangages .colonneLangages .competence {
+    height: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+section#competences .ligneLangages .colonneLangagesCode {
+    flex-direction: column;
+}
+
+.imgW {
+    width: 55%;
+    margin-bottom: 10px;
+}
+
+.imgH {
+    height: 40%;
+    margin-bottom: 10px;
+}
+
+.competence p {
+    overflow: hidden;
+    text-align: center;
+}
+
+section#competences .ligneLangues .langueFr {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("fr.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+section#competences .ligneLangues .langueEn {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("en.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+section#competences .ligneLangues .langueJp {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("jp.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*///////////////////////////////////////////////////// SECTION COMPETENCES FIN //////////////////////*/
+
+/*///////////////////////////////////////////////////// SECTION HOBBIES //////////////////////*/
+
+section#hobbies {
+    height: 100vh;
+    width: 100%;
+    padding: 150px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-image: url(type.png);
+    background-attachment: fixed;
+    background-position: center
+}
+
+section#hobbies .hobbiesContent {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section#hobbies .ligneHauteHobbies {
+    width: 100%;
+    display: flex;
+    flex: 50%;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+section#hobbies .ligneBasseHobbies {
+    width: 100%;
+    display: flex;
+    flex: 15%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section#hobbies .colonneLigneHauteHobbies {
+    height: 100%;
+    display: flex;
+    flex: 15%;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden; 
+}
+
+section#hobbies .colonneDoubleLarge {
+    height: 100%;
+    width: 100%;
+    flex: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden; 
+
+}
+
+section#hobbies .colonneLigneHauteHobbiesDouble {
+    height: 100%;
+    display: flex;
+    flex: 25%;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column; 
+    overflow: hidden; 
+
+}
+
+section#hobbies .colonneLigneBasseHobbies {
+    height: 100%; 
+    display: flex;
+    flex: 33%;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden; 
+
+}
+
+section#hobbies .hobby {
+    height: 100%;
+    flex: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+    border: 4px solid #770000;
+    margin: 5px;
+}
+
+section#hobbies .hobby h2 {
+    position: absolute;
+    font-family: Petit Formal Script, cursive;
+    font-size: 1.2em;
+}
+
+section#hobbies .hobbyDigital {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("hobbyDigital.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section#hobbies .hobbyJapon {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("hobbyJapon.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section#hobbies .hobbyPlongee {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("hobbyPlongee.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section#hobbies .hobbyPhoto {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("hobbyPhoto.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section#hobbies .hobbyDessin {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("hobbyDessin.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section#hobbies .hobbyNewtech {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("hobbyNewtech.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section#hobbies .hobbyVoyage {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("hobbyVoyage.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section#hobbies .hobbyJv {
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("hobbyJv.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*///////////////////////////////////////////////////// SECTION HOBBIES FN //////////////////////*/
+
+/*///////////////////////////////////////////////////// FOOTER //////////////////////*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    border-top: 8px #770000 double;
+    background-color: #252A30;
+}
+
+footer .footerContent {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer p {
+    z-index: 10;
+    font-size: 0.9;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+}
+
+footer .logo-bg {
+    position: absolute;
+}
+
+footer .logo-bg i {
+    color: rgba(48,55,63,0.5);
+}
+
+footer .fa-circle {
+    color: #1A1D22;
+}
+
+footer .fa-stack-1x {
+    color: rgba(255,255,255,0.5);
+}
+
+footer .fa-stack-1x:hover {
+    color: rgba(255,255,255,1);
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.roro {
+    animation: rotation 100s infinite linear;
+    transform-origin: center;
+}
+
+/*///////////////////////////////////////////////////// FOOTER FIN //////////////////////*/
+
+/*///////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////// MEDIA QUERIES ///////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////*/
+
+@media screen and (max-width:720px) {
+
+/*///////////////////////////////////////////////////// MOBILE : MENU MOBILE //////////////////////*/
+
+#menuMobile {
+     display: none;
+}
+
+/*///////////////////////////////////////////////////// MOBILE : MENU MOBILE FIN //////////////////////*/
+
+/*///////////////////////////////////////////////////// MOBILE : MENU PC //////////////////////*/
+
+nav#menu {
+    display: none;
+}
+
+/*///////////////////////////////////////////////////// MOBILE : MENU PC FIN //////////////////////*/
+
+/*///////////////////////////////////////////////////// MOBILE : HEADER //////////////////////*/
+
+header#home {
+}
+
+header#home .fa {
+    color: white;
+}
+
+header#home .homeContent {
+    padding: 1em;
+    flex-direction: column;
+}
+
+header#home .blankElem {
+    display: none;
+}
+
+header#home h1 {
+    font-size: 5.5em;
+}
+
+header#home h2 {
+    font-size: 2.5em;
+}
+
+/*///////////////////////////////////////////////////// MOBILE : HEADER FIN //////////////////////*/
+
+/*///////////////////////////////////////////////////// MOBILE : FORMATIONS //////////////////////*/
+
+section#formations {
+    padding: 1em;
+}
+
+section#formations .formationContent {
+    padding: 1em;
+    position: relative;
+    flex-direction: column;
+}
+
+section#formations .descriptionFormation ul {
+    justify-content: flex-start;
+}
+
+section#formations .descriptionFormation li {
+    font-size: 1.3em;
+    margin: 5px;
+}
+
+section#formations nav.navFormations {
+    width: 75%;
+}
+
+/*///////////////////////////////////////////////////// MOBILE : FORMATIONS FIN //////////////////////*/
+
+/*///////////////////////////////////////////////////// MOBILE : PROJETS //////////////////////*/
+
+section#projets {
+    padding: 1em;
+}
+
+section#projets .projetContent {
+    padding: 1em;
+    flex-direction: column;
+}
+
+section#projets .switchNavProjets span {
+    color: #fff;
+    font-size: 2em;
+}
+
+section#projets .descriptionProjet {
+    justify-content: flex-end;
+}
+
+section#projets .descriptionProjet h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+section#projets .previewProjet {
+    justify-content: flex-start;
+}
+
+section#projets .previewProjet span {
+    font-size: 0.8em;
+}
+
+section#projets .previewProjet img {
+    width: 100%;
+    margin: 10px 0 20px 0;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+}
+
+section#projets nav.navProjets li {
+    height: 26%;
+    width: 45%;
+}
+
+section#projets .previewProjet {
+    padding: 0em;
+}
+
+section#projets .descriptionProjet p {
+    font-size: 0.9em
+}
+
+section#projets .descriptionProjet .bouton {
+    display: none;
+}
+
+
+/*///////////////////////////////////////////////////// MOBILE : PROJETS FIN //////////////////////*/
+
+/*///////////////////////////////////////////////////// MOBILE : COMPETENCES //////////////////////*/
+
+section#competences {
+    padding: 1em;
+}
+
+section#competences h2 {
+    font-size: 1.5em;
+}
+
+section#competences .ligneLangues {
+    flex: 0%;
+    overflow: hidden;
+}
+
+section#competences .ligneLangages .colonneLangagesDot .dotCompetence {
+    height: 15%;
+    width: 35%;
+}
+
+section#competences .ligneLangages .colonneLangagesDot .dotCompetence h3 {
+    font-size: 0.5em;
+}
+
+section#competences .ligneLangages .colonneLangagesCode {
+    flex-direction: column;
+}
+
+.imgW {
+    width: 100%;
+}
+
+.imgH {
+    height: 25%;
+}
+
+.competence p {
+    font-size: 0.7em;
+}
+
+/*///////////////////////////////////////////////////// MOBILE : COMPETENCES FIN //////////////////////*/
+
+/*///////////////////////////////////////////////////// MOBILE : HOBBIES //////////////////////*/
+
+section#hobbies {
+    padding: 1em;
+    height: auto;
+}
+
+section#hobbies .ligneHauteHobbies {
+    flex-direction: column;
+}
+
+section#hobbies .ligneBasseHobbies {
+    flex-direction: column;
+}
+
+section#hobbies .colonneLigneHauteHobbies {
+    width: 100%;
+    height: 100px;
+    margin: 5px;
+}
+
+section#hobbies .colonneLigneHauteHobbiesDouble {
+    width: 100%;
+    height: 208px;
+    flex: initial;
+    padding: 5px;
+}
+
+section#hobbies .colonneLigneBasseHobbies {
+    width: 100%;
+    height: 100px;
+    margin: 5px;
+}
+
+section#hobbies .colonneDoubleLarge {
+    width: 100%;
+    height: 170px;
+}
+
+section#hobbies .hobby {
+    height: 100px;
+}
+
+/*///////////////////////////////////////////////////// MOBILE : HOBBIES FIN //////////////////////*/
+
+/*///////////////////////////////////////////////////// MOBILE : FOOTER //////////////////////*/
+
+footer {
+    height: 250px;
+    padding: 40px;
+}
+
+/*///////////////////////////////////////////////////// MOBILE : FOOTER FIN //////////////////////*/
+}
